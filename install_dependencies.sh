@@ -1,4 +1,6 @@
 #!/bin/bash
-cd /home/ec2-user/hello-world-api
-pip3 install -r requirements.txt
-nohup python3 app.py &
+sudo pip3 install virtualenv
+cd /home/ec2-user/app
+virtualenv environment
+source environment/bin/activate
+sudo pip3 install -r requirements.txt
